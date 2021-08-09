@@ -1,0 +1,1 @@
+SELECT * FROM Cajeros WHERE cajero IN (1,3,4,7,9,10);
