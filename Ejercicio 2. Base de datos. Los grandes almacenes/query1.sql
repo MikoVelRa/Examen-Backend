@@ -5,26 +5,26 @@ CREATE DATABASE Los_Grandes_Almacenes;
 USE Los_Grandes_Almacenes;
 
 CREATE TABLE Cajeros(
-	Cajero int NOT NULL PRIMARY KEY,
+	Cajero smallint NOT NULL PRIMARY KEY,
 	NomApels varchar(255)
 );
 
 
 CREATE TABLE Productos(
-	Producto INT NOT NULL PRIMARY KEY,
+	Producto smallint NOT NULL PRIMARY KEY,
 	Nombre varchar(100),
-	Precio double(8,2)
+	Precio money
 );
 
 
 CREATE TABLE Maquinas_Registradoras(
-	Maquina INT NOT NULL PRIMARY KEY,
-	Piso int
+	Maquina smallint NOT NULL PRIMARY KEY,
+	Piso smallint
 );
 
 
 CREATE TABLE Venta(
-	Cajero INT NOT NULL,
-	Maquina INT NOT NULL,
-	Producto INT NOT NULL
+	Cajero smallint NOT NULL,
+	Maquina smallint NOT NULL,
+	Producto smallint NOT NULL
 );
